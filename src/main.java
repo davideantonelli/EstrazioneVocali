@@ -9,16 +9,17 @@ public class main {
 		
 		int i=0;
 		 estraiVocali estrai = new estraiVocali();
-		 ArrayList<String> estratte = new ArrayList<String>();
-		 estratte= (ArrayList<String>) estrai.EstraiVocali("ciao");
+		 List<String> estratte = new ArrayList<String>();
+		 estratte= estrai.EstraiVocali("ciaone");
 	
-			 sb.append("La parola che mi hai dato contenteva ben " + estratte.size() + " vocali\n" );
+			 sb.append("La parola che ho processato contenteva ben " + estratte.size() + " vocali\n" );
 			 sb.append("La nuova stringa è la seguente ");
 			for (String s:estratte) {
 			 sb.append(s);}
 			
 			 System.out.println(sb);
 		 
+			 
 			 
 	}
 
